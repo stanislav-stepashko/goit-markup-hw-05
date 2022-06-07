@@ -58,6 +58,11 @@ body {
   /* outline: 1px solid crimson; */
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .header-border {
   border-bottom: 1px solid #ECECEC;
 }
@@ -164,19 +169,15 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mail-icon {
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-.tel-icon {
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
 .contact-mail-header:hover,
 .contact-mail-header:focus {
   color: var(--focus-color);
+}
+
+.mail-icon {
+  fill: inherit;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 .contact-number-header {
@@ -194,6 +195,17 @@ body {
 .contact-number-header:hover,
 .contact-number-header:focus {
   color: var(--focus-color);
+}
+
+.tel-icon {
+  vertical-align: middle;
+  margin-right: 10px;
+  fill: inherit;
+}
+
+.contact-information-item {
+  color: var(--light-text-color);
+  fill: var(--light-text-color);
 }
 
 .contact-information-item:hover,
@@ -301,8 +313,7 @@ body {
 /* -----------------HERO-BENEFITS----------------- */
 
 .hero-benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
+
 }
 
 .benefits-list {
@@ -382,7 +393,7 @@ margin-right: 30px;
 /* -----------------DIRECTION-ACTIVITY----------------- */
 
 .direction-activity {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .direction-activity-header {
@@ -443,8 +454,6 @@ margin-right: 30px;
 /* -----------------TEAM----------------- */
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--light-background-color);
   /* outline: 2px solid teal; */
 }
@@ -517,11 +526,10 @@ margin-right: 30px;
 }
 
 .social-link-item {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
-  border: none;
-  padding-top: 12px;
-  /* color: var(--dark-text-color); */
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -537,8 +545,6 @@ margin-right: 30px;
 /* -----------------CLIENTS----------------- */
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
   /* background-color: var(--light-background-color); */
   /* outline: 2px solid teal; */
 }
@@ -550,13 +556,12 @@ margin-right: 30px;
 }
 
 .clients-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border-radius: 4px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
   cursor: pointer;
   fill: #AFB1B8;
   border: 1px solid #AFB1B8;
@@ -674,10 +679,10 @@ margin-right: 30px;
 }
 
 .footer-social-link-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
-  border: none;
-  padding-top: 12px;
-  padding-left: 12px;
   color: var(--dark-text-color);
   width: 44px;
   height: 44px;
