@@ -41,8 +41,10 @@ address {
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
-.body {
-  font-family: 'Roboto';
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
 }
 
 /* -----------------HEADER----------------- */
@@ -172,28 +174,10 @@ address {
   margin-right: 10px;
 }
 
-/* .contact-mail-header::before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  background-position: center;
-  background-image: url(../images/email.svg);
-} */
-
 .contact-mail-header:hover,
 .contact-mail-header:focus {
   color: var(--focus-color);
 }
-
-/* .contact-mail-header:hover::before,
-.contact-mail-header:focus::before {
-  background-image: url(../images/email-hover.svg);
-} */
 
 .contact-number-header {
   font-weight: 500;
@@ -207,19 +191,6 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .contact-number-header::before {
-  display: inline-block;
-  content: "";
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  vertical-align: middle;
-  background-image: url(../images/tel.svg);
-} */
-
 .contact-number-header:hover,
 .contact-number-header:focus {
   color: var(--focus-color);
@@ -230,11 +201,6 @@ address {
   color: var(--focus-color);
   fill: var(--focus-color);
 }
-
-/* .contact-number-header:hover::before,
-.contact-number-header:focus::before {
-  background-image: url(../images/tel-hover.svg);
-} */
 
 /* -----------------HERO----------------- */
 
