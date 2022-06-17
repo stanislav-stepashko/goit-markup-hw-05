@@ -325,7 +325,7 @@ body {
   border-radius: 4px;
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 5000ms;
+  transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 10;
 }
